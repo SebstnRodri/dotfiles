@@ -18,7 +18,7 @@ XDG_STATE_HOME="${HOME}/.local/state"
 print "Creating required directory tree..."
 zf_mkdir -p "${XDG_CONFIG_HOME}"/{git/local,mc,htop,ranger,gem,tig,gnupg,nvim}
 zf_mkdir -p "${XDG_CACHE_HOME}"/{vim/{backup,swap,undo},zsh,tig}
-zf_mkdir -p "${XDG_DATA_HOME}"/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim/site/pack/plugins}
+zf_mkdir -p "${XDG_DATA_HOME}"/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim}
 zf_mkdir -p "${XDG_STATE_HOME}"
 zf_mkdir -p "${HOME}"/.local/{bin,etc}
 zf_chmod 700 "${XDG_CONFIG_HOME}/gnupg"
@@ -36,10 +36,8 @@ fi
 # Link config files
 print "Linking config files..."
 zf_ln -sfn "${SCRIPT_DIR}/vim" "${XDG_CONFIG_HOME}/vim"
-zf_ln -sf "${SCRIPT_DIR}/nvim/init.lua" "${XDG_CONFIG_HOME}/nvim/init.lua"
-zf_ln -sfn "${SCRIPT_DIR}/nvim/after" "${XDG_CONFIG_HOME}/nvim/after"
-zf_ln -sfn "${SCRIPT_DIR}/nvim/lua" "${XDG_CONFIG_HOME}/nvim/lua"
-zf_ln -sfn "${SCRIPT_DIR}/nvim/plugins" "${XDG_DATA_HOME}/nvim/site/pack/plugins/start"
+zf_ln -sf "${SCRIPT_DIR}/tools/lazyvim" "${XDG_CONFIG_HOME}/nvim"
+zf_ln -sf "${SCRIPT_DIR}/configs/nvim/plugins" "${XDG_CONFIG_HOME}/nvim/plugins"
 zf_ln -sfn "${SCRIPT_DIR}/tmux" "${XDG_CONFIG_HOME}/tmux"
 zf_ln -sf "${SCRIPT_DIR}/configs/gitconfig" "${XDG_CONFIG_HOME}/git/config"
 zf_ln -sf "${SCRIPT_DIR}/configs/gitattributes" "${XDG_CONFIG_HOME}/git/attributes"
@@ -121,21 +119,6 @@ if (( ${+commands[vim]} )); then
     # Generate vim help tags
     print "Generating vim helptags..."
     command vim --not-a-term -i "NONE" -c "helptags ALL" -c "qall" &> /dev/null
-    print "  ...done"
-fi
-
-if (( ${+commands[nvim]} )); then
-    # Generate nvim help tags
-    print "Generating nvim helptags..."
-    command nvim --headless -c "helptags ALL" -c "qall" &> /dev/null
-    print "  ...done"
-    # Update treesitter config
-    print "Updating treesitter config..."
-    command nvim --headless -c "TSUpdate" -c "qall" &> /dev/null
-    print "  ...done"
-    # Update mason registries
-    print "Updating mason registries..."
-    command nvim --headless -c "MasonUpdate" -c "qall" &> /dev/null
     print "  ...done"
 fi
 

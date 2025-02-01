@@ -94,115 +94,6 @@
 [submodule "env-wrappers/rbenv/ruby-build"]
 	path = env-wrappers/rbenv/ruby-build
 	url = https://github.com/rbenv/ruby-build.git
-[submodule "nvim/plugins/cmp-buffer"]
-	path = nvim/plugins/cmp-buffer
-	url = https://github.com/hrsh7th/cmp-buffer.git
-[submodule "nvim/plugins/cmp-nvim-lsp"]
-	path = nvim/plugins/cmp-nvim-lsp
-	url = https://github.com/hrsh7th/cmp-nvim-lsp.git
-[submodule "nvim/plugins/cmp-path"]
-	path = nvim/plugins/cmp-path
-	url = https://github.com/hrsh7th/cmp-path.git
-[submodule "nvim/plugins/cmp-spell"]
-	path = nvim/plugins/cmp-spell
-	url = https://github.com/f3fora/cmp-spell.git
-[submodule "nvim/plugins/committia"]
-	path = nvim/plugins/committia
-	url = https://github.com/rhysd/committia.vim.git
-[submodule "nvim/plugins/diffview"]
-	path = nvim/plugins/diffview
-	url = https://github.com/sindrets/diffview.nvim.git
-[submodule "nvim/plugins/fidget"]
-	path = nvim/plugins/fidget
-	url = https://github.com/j-hui/fidget.nvim.git
-[submodule "nvim/plugins/git-rebase-auto-diff"]
-	path = nvim/plugins/git-rebase-auto-diff
-	url = https://github.com/yutkat/git-rebase-auto-diff.nvim.git
-[submodule "nvim/plugins/gitsigns"]
-	path = nvim/plugins/gitsigns
-	url = https://github.com/lewis6991/gitsigns.nvim.git
-[submodule "nvim/plugins/indent-blankline"]
-	path = nvim/plugins/indent-blankline
-	url = https://github.com/lukas-reineke/indent-blankline.nvim.git
-[submodule "nvim/plugins/lazydev"]
-	path = nvim/plugins/lazydev
-	url = https://github.com/folke/lazydev.nvim.git
-[submodule "nvim/plugins/lsp-zero"]
-	path = nvim/plugins/lsp-zero
-	branch = v4.x
-	url = https://github.com/VonHeikemen/lsp-zero.nvim.git
-[submodule "nvim/plugins/lualine"]
-	path = nvim/plugins/lualine
-	url = https://github.com/nvim-lualine/lualine.nvim.git
-[submodule "nvim/plugins/mason"]
-	path = nvim/plugins/mason
-	url = https://github.com/williamboman/mason.nvim.git
-[submodule "nvim/plugins/mason-lspconfig"]
-	path = nvim/plugins/mason-lspconfig
-	url = https://github.com/williamboman/mason-lspconfig.nvim.git
-[submodule "nvim/plugins/nvim-autopairs"]
-	path = nvim/plugins/nvim-autopairs
-	url = https://github.com/windwp/nvim-autopairs.git
-[submodule "nvim/plugins/nvim-cmp"]
-	path = nvim/plugins/nvim-cmp
-	url = https://github.com/hrsh7th/nvim-cmp.git
-[submodule "nvim/plugins/nvim-lspconfig"]
-	path = nvim/plugins/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig.git
-[submodule "nvim/plugins/nvim-surround"]
-	path = nvim/plugins/nvim-surround
-	url = https://github.com/kylechui/nvim-surround.git
-[submodule "nvim/plugins/nvim-tree"]
-	path = nvim/plugins/nvim-tree
-	url = https://github.com/nvim-tree/nvim-tree.lua.git
-[submodule "nvim/plugins/nvim-treesitter"]
-	path = nvim/plugins/nvim-treesitter
-	url = https://github.com/nvim-treesitter/nvim-treesitter.git
-[submodule "nvim/plugins/nvim-treesitter-textobjects"]
-	path = nvim/plugins/nvim-treesitter-textobjects
-	url = https://github.com/nvim-treesitter/nvim-treesitter-textobjects.git
-[submodule "nvim/plugins/plenary"]
-	path = nvim/plugins/plenary
-	url = https://github.com/nvim-lua/plenary.nvim.git
-[submodule "nvim/plugins/project"]
-	path = nvim/plugins/project
-	url = https://github.com/DrKJeff16/project.nvim.git
-[submodule "nvim/plugins/reticle"]
-	path = nvim/plugins/reticle
-	url = https://github.com/tummetott/reticle.nvim.git
-[submodule "nvim/plugins/schemastore"]
-	path = nvim/plugins/schemastore
-	url = https://github.com/b0o/SchemaStore.nvim.git
-[submodule "nvim/plugins/solarized"]
-	path = nvim/plugins/solarized
-	url = https://github.com/maxmx03/solarized.nvim.git
-[submodule "nvim/plugins/surround-ui"]
-	path = nvim/plugins/surround-ui
-	url = https://github.com/roobert/surround-ui.nvim.git
-[submodule "nvim/plugins/telescope"]
-	path = nvim/plugins/telescope
-	url = https://github.com/nvim-telescope/telescope.nvim.git
-[submodule "nvim/plugins/telescope-ui-select"]
-	path = nvim/plugins/telescope-ui-select
-	url = https://github.com/nvim-telescope/telescope-ui-select.nvim.git
-[submodule "nvim/plugins/tmux"]
-	path = nvim/plugins/tmux
-	url = https://github.com/aserowy/tmux.nvim.git
-[submodule "nvim/plugins/vim-cool"]
-	path = nvim/plugins/vim-cool
-	url = https://github.com/romainl/vim-cool.git
-[submodule "nvim/plugins/vim-fugitive"]
-	path = nvim/plugins/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "nvim/plugins/vim-helm"]
-	path = nvim/plugins/vim-helm
-	url = https://github.com/towolf/vim-helm.git
-[submodule "nvim/plugins/which-key"]
-	path = nvim/plugins/which-key
-	url = https://github.com/folke/which-key.nvim.git
-[submodule "nvim/plugins/yaml-companion"]
-	path = nvim/plugins/yaml-companion
-	url = https://github.com/someone-stole-my-name/yaml-companion.nvim.git
 [submodule "tmux/plugins/colors-solarized"]
 	path = tmux/plugins/colors-solarized
 	url = https://github.com/seebi/tmux-colors-solarized.git
@@ -503,3 +394,6 @@
 [submodule "zsh/plugins/z"]
 	path = zsh/plugins/z
 	url = https://github.com/agkozak/zsh-z.git
+[submodule "tools/lazyvim"]
+	path = tools/lazyvim
+	url = https://github.com/LazyVim/starter

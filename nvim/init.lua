@@ -1,0 +1,1 @@
+/home/liu/.local/dotfiles/tools/lazyvim/init.lua

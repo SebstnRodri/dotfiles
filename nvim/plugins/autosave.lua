@@ -1,2 +1,0 @@
--- autosave plugin
--- https://github.com/Pocco81/AutoSave.nvim

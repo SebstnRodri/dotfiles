@@ -16,7 +16,7 @@ XDG_STATE_HOME="${HOME}/.local/state"
 
 # Create required directories
 print "Creating required directory tree..."
-zf_mkdir -p "${XDG_CONFIG_HOME}"/{git/local,mc,htop,ranger,gem,tig,gnupg,nvim}
+zf_mkdir -p "${XDG_CONFIG_HOME}"/{git/local,mc,htop,ranger,gem,tig,gnupg}
 zf_mkdir -p "${XDG_CACHE_HOME}"/{vim/{backup,swap,undo},zsh,tig}
 zf_mkdir -p "${XDG_DATA_HOME}"/{{goenv,jenv,luaenv,nodenv,phpenv,plenv,pyenv,rbenv}/plugins,zsh,man/man1,vim/spell,nvim}
 zf_mkdir -p "${XDG_STATE_HOME}"

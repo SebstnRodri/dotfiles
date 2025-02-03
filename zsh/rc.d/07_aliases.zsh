@@ -44,3 +44,12 @@ alias exit=" exit"
 (( ${+commands[fd]} )) && alias fd="noglob fd"
 (( ${+commands[man]} )) && alias man="nocorrect wrap-man"
 (( ${+commands[sudo]} )) && alias sudo="noglob wrap-sudo " # trailing space is needed to enable alias expansion
+
+# Bat as a cat replacement
+((${+commands[bat]})) && alias cat="nocorrect bat"
+
+# Eza as a ls replacement
+(( ${+commands[eza]} )) && alias ls="eza --color=auto --classify --icons=auto"
+(( ${+commands[eza]} )) && alias ll="eza --color=auto --classify --long"
+((${+commands[exa]})) && alias ls="exa --color=auto --classify"
+((${+commands[exa]})) && alias ll="exa --color=auto --classify --long"

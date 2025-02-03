@@ -37,6 +37,7 @@ fi
 print "Linking config files..."
 zf_ln -sfn "${SCRIPT_DIR}/tmux" "${XDG_CONFIG_HOME}/tmux"
 zf_ln -sfn "${SCRIPT_DIR}/nvim" "${XDG_CONFIG_HOME}/nvim"
+zf_ln -sfn "${SCRIPT_DIR}/custom/alacritty-theme" "${XDG_CONFIG_HOME}/alacritty/themes"
 zf_ln -sf "${SCRIPT_DIR}/configs/gitconfig" "${XDG_CONFIG_HOME}/git/config"
 zf_ln -sf "${SCRIPT_DIR}/configs/gitattributes" "${XDG_CONFIG_HOME}/git/attributes"
 zf_ln -sf "${SCRIPT_DIR}/configs/gitignore" "${XDG_CONFIG_HOME}/git/ignore"

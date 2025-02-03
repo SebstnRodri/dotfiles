@@ -57,6 +57,7 @@
     newline                   # \n
     # virtualenv              # python virtual environment
     prompt_char               # prompt symbol
+
   )
 
   # Right prompt segments.
@@ -68,6 +69,8 @@
     time                      # current time
     # =========================[ Line #2 ]=========================
     newline                   # \n
+    pyenv
+    virtualenv
   )
 
   # Basic style options that define the overall prompt look.
